@@ -193,6 +193,8 @@ public class Tablero {
             case 4:
                 newZombie = new Caracubo(Math.floor(Math.random()*5));
                 break;
+            default:
+                break;
         }
         zombies.add(newZombie);
     
@@ -347,7 +349,18 @@ public class Tablero {
     public void limpiarPantalla() {
         //Solo funciona en windows
         try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            // System.out.println(System.getProperty("os.name"));
+            if (System.getProperty("os.name").toLowerCase().contains("windows")){ //Determina si el sistema es Windows
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();//Borrar consola Windows
+            }else{
+                Runtime.getRuntime().exec("echo sdasdas"); //Borrar consola en Linux
+                // System.out.print("\033[H\033[2J");
+                // System.out.flush();
+                // Robot  robot = new Robot();
+                // robot.keyPress(KeyEvent.VK_CONTROL);
+                // robot.keyPress(KeyEvent.VK_L);
+            }
+           
         } catch (Exception e) {
             System.out.println("No se puede limpiar la pantalla!");
         }
