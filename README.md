@@ -5,6 +5,7 @@ You can find the source code in the "src" folder, there you can find every singl
 Also you can find a built version with the jar file, or you can create your own with the built .class files if you wish. -->
 Un remake del famoso juego "Plantas vs Zombies", la idea del proyecto es mostrar como la POO funciona y divertirse haciendolo!
 Puedes encontrar el codigo fuente en la carpeta "src", ahi veras cada linea de codigo, e incluso tu puedes crear tu version del juego con el codigo!
+(Actualmente la opcion multijugador no funciona, proximamente estará disponible!)
 
 ## Instrucciones para compilar
 ### Windows:
