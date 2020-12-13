@@ -5,8 +5,10 @@ You can find the source code in the "src" folder, there you can find every singl
 Also you can find a built version with the jar file, or you can create your own with the built .class files if you wish. -->
 Un remake del famoso juego "Plantas vs Zombies", la idea del proyecto es mostrar como la POO funciona y divertirse haciendolo!
 Puedes encontrar el codigo fuente en la carpeta "src", ahi veras cada linea de codigo, e incluso tu puedes crear tu version del juego con el codigo!
+
 ## Instrucciones para compilar
 ### Windows:
+-Crear un archivo bat con las siguientes instrucciones y colocarlo en la carpeta raiz
 
     DEL Build\.class 
     COPY src\plantasvszombies\*.java Build\plantasvszombies 
@@ -17,7 +19,8 @@ Puedes encontrar el codigo fuente en la carpeta "src", ahi veras cada linea de c
     jar cfe PlantasVsZombies.jar plantasvszombies.Test plantasvszombies/*
 
 ### Linux: 
-    
+-Crear un archivo sh con los siguientes comandos y colocarlo en la carpeta raiz
+
     rm -r Build/*
     cp src\plantasvszombies\*.java Build\plantasvszombies 
     cd Build\plantasvszombies
